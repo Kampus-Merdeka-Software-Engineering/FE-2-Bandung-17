@@ -9,7 +9,7 @@ body {
 /* Navbar */
 nav {
   display: flex;
-  background-color: rgb(255, 170, 67);
+  background-color: #c8a287;
   justify-content: space-around;
   /* padding: 20px 0; */
   color: rgb(252, 248, 243);
@@ -18,8 +18,17 @@ nav {
 }
 
 nav .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
   letter-spacing: 2px;
+  font-style: italic;
 }
+
+/* nav .logo span {
+  color: var(--primary); 
+} */
+
 nav ul {
   display: flex;
   list-style: none;

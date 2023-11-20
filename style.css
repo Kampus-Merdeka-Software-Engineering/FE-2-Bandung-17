@@ -274,6 +274,7 @@ body {
 .about h2 span,
 .menu h2 span,
 .products h2 span,
+.container h2 span,
 .contact h2 span {
   color: var(--primary);
 }
@@ -390,10 +391,17 @@ body {
 .products .product-card {
   text-align: center;
 }
-
+.navbar .navbar-nav a {
+  color: rgb(252, 248, 243);
+  text-decoration: none;
+  font-size: 1em;
+}
 .products a {
   background-color: var(--primary);
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  color: #fff;
+  text-decoration: none;
 }
 .products a:hover {
   background-color: #d9d9d9;

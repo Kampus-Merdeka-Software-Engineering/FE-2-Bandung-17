@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tentang Kami</title>
-
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
-
     <!-- My Style -->
     <link rel="stylesheet" href="/style.css" />
   </head>
+
   <body>
     <nav class="navbar">
       <a href="#" class="navbar-logo">Kafe<span>Kita</span>.</a>
 
       <div class="navbar-nav">
-        <a href="beranda.html">Beranda</a>
-        <a href="#tentang_kami">Tentang Kami</a>
+        <a href="home.html">Beranda</a>
+        <a href="tentang_kami">Tentang Kami</a>
         <a href="menu.html">Menu</a>
       </div>
 
@@ -88,7 +90,6 @@
       </div>
     </section>
     <!-- Team Section End -->
-    <!-- Team Section End -->
 
     <!-- Contact Section start -->
     <sections class="contact" id="contact">
@@ -114,6 +115,14 @@
       </div>
 
       <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d15824.608119561675!2d110.2208531!3d-7.4484269!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1688381445092!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
         <div class="sosmed">
           <div class="sosmed-group">
             <a href="https://www.instagram.com/our.cafe/"><i data-feather="instagram"></i></a>
@@ -132,19 +141,6 @@
             <input type="text" placeholder="08123456789" />
           </div>
         </div>
-
-        <form action="action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Nama kamu.." />
-
-          <label for="alamat">Alamat</label>
-          <input type="text" id="lname" name="lastname" placeholder="Misalnya Bandung.." />
-
-          <label for="subject">Pesan</label>
-          <textarea id="subject" name="subject" placeholder="Tulis pesan.." style="height: 200px"></textarea>
-
-          <input type="submit" value="Submit" />
-        </form>
       </div>
     </sections>
     <!-- Contact Section end -->

@@ -251,17 +251,8 @@ body {
 }
 
 /* About Section */
-.about,
-.menu,
-.products,
-.contact {
-  padding: 8rem 7% 1.4rem;
-}
-
-.menu {
-  padding: 0px;
-  background-color: #cfb4ac;
-  text-align: center;
+.about {
+  margin-top: 4rem;
 }
 
 /* style line 59 */
@@ -425,12 +416,55 @@ body {
 
 /* Menu Makanan */
 .container {
-  margin-top: 4rem;
+  padding-top: 4rem;
 }
+.container .row {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 25%;
+  justify-content: center;
+}
+
+.container .product-makanan {
+  text-align: center;
+}
+
 .container .product-makanan img {
   height: 15rem;
 }
 
+/* button search */
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #92ccfc;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .contact .judul {
   margin-top: 7rem;
 }

@@ -255,7 +255,7 @@ body {
 
 /* About Section */
 .about {
-  margin-top: 4rem;
+  margin-top: 0;
 }
 
 /* style line 59 */
@@ -309,6 +309,7 @@ body {
 .about .row .content h3 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: var(--primary);
 }
 
 /* atur ukuran daleman p */

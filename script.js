@@ -12,9 +12,6 @@ function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
-slides[slideIndex - 1].style.display = "block";
-setTimeout(showSlides, 10000); // Change image every 2 seconds
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");

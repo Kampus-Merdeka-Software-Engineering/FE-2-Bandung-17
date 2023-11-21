@@ -48,9 +48,12 @@ body {
   text-decoration: none;
   font-size: 1em;
 }
-
 #hamburger-menu {
   display: none;
+}
+.navbar .menu-toggle #shopping-cart-button,
+#hamburger-menu {
+  color: white;
 }
 
 /* Responsive breakpoint */
@@ -441,6 +444,13 @@ body {
 .container .product-makanan img {
   height: 15rem;
 }
+.container h2 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+.container p {
+  text-align: center;
+}
 
 /* button search */
 form.example input[type="text"] {
@@ -513,18 +523,20 @@ form.example::after {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  padding: 12px; /* Some padding */
   border: 1px solid #eee; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+input[type="submit"] {
   background-color: #b6895b;
   color: white;
   padding: 12px 20px;
@@ -534,14 +546,12 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #a1764a;
 }
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: #FFFBF5;
+  background-color: #fffbf5;
   padding: 20px;
 }
-
-

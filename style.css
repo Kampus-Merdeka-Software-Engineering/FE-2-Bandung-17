@@ -23,8 +23,8 @@ body {
   height: 50px;
   align-items: center;
   position: fixed;
-  width: 100%; 
-  z-index: 1000; 
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar .logo {
@@ -166,7 +166,6 @@ body {
   background-size: cover;
 }
 
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -240,7 +239,7 @@ body {
   padding: 20px;
   margin: 20px;
   max-width: 300px;
-  float: left; 
+  float: left;
   text-align: center;
 }
 
@@ -325,6 +324,7 @@ body {
 
 /* atur ukuran h3 */
 .about .row .content h3 {
+  margin-top: 5rem;
   font-size: 3rem;
   margin-bottom: 1rem;
   color: var(--primary);
@@ -332,12 +332,13 @@ body {
 
 /* atur ukuran daleman p */
 .about .row .content p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #4d3f28;
+  text-align: justify;
 }
 
 .about .row .content h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #4d3f28;
 }
 
@@ -444,7 +445,7 @@ body {
   font-size: 1rem;
 }
 
-/* Menu Makanan */
+/* Menu Makanan & Minuman*/
 .container {
   padding-top: 4rem;
 }
@@ -456,35 +457,49 @@ body {
   justify-content: center;
 }
 
-.container .product-makanan {
+.container .product-item {
   text-align: center;
 }
 
-.container .product-makanan img {
+.container .product-item img {
   height: 15rem;
 }
-.container h2 {
+.container .judul-item {
   margin-top: 2rem;
   text-align: center;
   font-size: 2.6rem;
 }
+.container h2 {
+  text-align: center;
+}
 .container p {
   text-align: center;
 }
-
+.container a {
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.container a:hover {
+  background-color: #d9d9d9;
+  border: #d9d9d9;
+}
 /* button search */
 form.example input[type="text"] {
-  padding: 10px;
+  padding: 8px;
   font-size: 17px;
   border: 1px solid grey;
+  border-right: none;
   float: left;
   width: 80%;
   background: #f1f1f1;
 }
 
 form.example button {
-  float: left;
   width: 20%;
+  border-radius: 7%;
   padding: 10px;
   background: #2196f3;
   color: white;
@@ -492,6 +507,7 @@ form.example button {
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
+  margin-left: -0.5rem;
 }
 
 form.example button:hover {
@@ -517,7 +533,7 @@ form.example::after {
 
 .contact .row .sosmed {
   flex: 1 1 45rem;
-  padding: 5rem 2rem;
+  padding: 0rem 2rem;
   text-align: center;
 }
 

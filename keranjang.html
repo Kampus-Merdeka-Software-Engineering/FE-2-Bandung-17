@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu Kita</title>
+    <title>Kafe Kita</title>
+    <!-- my css -->
     <link rel="stylesheet" href="/style.css" />
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -12,9 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
   </head>
-
   <body>
-    <!-- nav mulai -->
     <nav class="navbar">
       <div class="logo">
         <h4>
@@ -31,37 +30,27 @@
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
-    <!-- nav akhir -->
-
-    <!-- Product Section start -->
-    <section class="products" id="products">
-      <h2><span>Menu</span> Kami</h2>
-      <div class="row">
-        <div class="col">
-          <div class="product-card">
-            <div class="product-image">
-              <img src="img/menu/Food_BelgianWaffles .jpeg" class="img-thumbnail" alt="Makanan" />
-            </div>
-            <div class="product-content">
-              <h3>Makanan</h3>
-            </div>
-            <a href="product_makanan.html">Beli Sekarang</a>
+    <section id="cart" class="cart">
+      <div class="col">
+        <div class="row">
+          <div class="trash-icon">
+            <button><i data-feather="trash-2"></i></button>
+            <img src="" alt="" />
           </div>
-        </div>
-        <div class="col">
-          <div class="product-card">
-            <div class="product-image">
-              <img src="img/menu/Noncoffee_KoreanStrawberryMilk.jpeg" class="img-thumbnail" alt="Minuman" />
-            </div>
-            <div class="product-content">
-              <h3>Minuman</h3>
-            </div>
-            <a href="product_minuman.html">Beli Sekarang </a>
+          <div class="konten">
+            <h3>Sejarah</h3>
+            <p class="fs-6">
+              Kafe Kita bermula dari kecintaan kami terhadap kopi dan warisan budaya kafe. Sejak dibuka pertama kali pada tahun 2022, kami memahami bahwa kopi bukan hanya minuman, tetapi sebuah cerita
+              yang mempertemukan orang dari berbagai lapisan masyarakat. Inspirasi kami datang dari kafe-kafe klasik di Eropa dan timur tengah, tempat di mana penulis, seniman, dan pemikir berkumpul
+              untuk berbagi ide-ide mereka.
+            </p>
+            <h4>Lezat, Cepat, Hemat</h4>
+            <p>Nikmati sajian berkulitas dengan harga pas</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Product Section end -->
+
     <!-- Feather Icons -->
     <script>
       feather.replace();

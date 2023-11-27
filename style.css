@@ -17,7 +17,7 @@ body {
 .navbar {
   display: flex;
   background-color: #c8a287;
-  justify-content: space-around;
+  justify-content: space-between;
   /* padding: 20px 0; */
   color: rgb(252, 248, 243);
   height: 50px;
@@ -25,6 +25,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  padding: 1.4rem 4%;
 }
 
 .navbar .logo {
@@ -49,14 +50,20 @@ body {
 .navbar .navbar-nav a {
   color: rgb(252, 248, 243);
   text-decoration: none;
+  display: inline-block;
   font-size: 20px;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
 }
 #hamburger-menu {
   display: none;
 }
-.navbar .menu-toggle #shopping-cart-button,
-#hamburger-menu {
+.navbar .menu-toggle a {
   color: white;
+}
+.navbar .menu-toggle a:hover {
+  color: var(--primary);
 }
 
 /* Responsive breakpoint */
@@ -81,9 +88,12 @@ body {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: #972929;
+    background-color: #fff;
     width: 30rem;
     height: 100vh;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
   }
 }
 /* ukuran mobile */
@@ -590,4 +600,12 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: #fffbf5;
   padding: 20px;
+}
+
+/* shopping-cart */
+.cart {
+  padding-top: 4rem;
+}
+.cart .col .row button {
+  cursor: pointer;
 }

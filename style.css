@@ -2,6 +2,7 @@
 :root {
   --primary: #b6895b;
   --bg: #fffbf5;
+  --primary2: #c8a287;
 }
 
 * {
@@ -48,7 +49,7 @@ body {
 }
 
 .navbar .navbar-nav a {
-  color: rgb(252, 248, 243);
+  color: #ffffff;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
@@ -56,6 +57,18 @@ body {
 .navbar .navbar-nav a:hover {
   color: var(--primary);
 }
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid var(--bg);
+  transform: scalex(0);
+  transition: 0.3s;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
 #hamburger-menu {
   display: none;
 }
@@ -88,12 +101,21 @@ body {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: #fff;
+    background-color: var(--primary2);
+
     width: 30rem;
     height: 100vh;
+    transition: 0.2s;
   }
   .navbar .navbar-nav.active {
     right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
   }
 }
 /* ukuran mobile */

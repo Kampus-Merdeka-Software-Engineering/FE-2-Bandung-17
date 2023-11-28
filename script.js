@@ -59,3 +59,37 @@ function showSlides(n) {
 //   setTimeout(showSlides, 2000); // Change image every 2 seconds
 // }
 // akhir slider beranda
+
+document.getElementById("beranda").addEventListener("click", function() {
+  resetMenuStyles();
+  this.style.color = "black";
+  this.style.fontWeight = "bold";
+});
+
+var itemCount = 1; // Default item count
+
+  function decrementItem() {
+    if (itemCount > 1) {
+      itemCount--;
+      updateItemCount();
+    }
+  }
+
+  function incrementItem() {
+    itemCount++;
+    updateItemCount();
+  }
+
+ function removeItem() {
+    itemCount = 0;
+    updateItemCount();
+  }
+
+  function updateItemCount() {
+    if (!isNaN(itemCount)) {
+      document.getElementById("itemCount").textContent = itemCount;
+    } else {
+      itemCount = 0;
+      document.getElementById("itemCount").textContent = itemCount;
+    }
+   }

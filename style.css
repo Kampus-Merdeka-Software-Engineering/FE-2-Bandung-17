@@ -630,7 +630,10 @@ input[type="submit"]:hover {
 }
 .cart .col .row button {
   cursor: pointer;
-  margin: 5rem 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  margin-right: 1rem;
 }
 .cart .col .row img {
   width: 100px;
@@ -641,4 +644,18 @@ input[type="submit"]:hover {
   position: absolute;
   margin-inline-start: 20rem;
   margin-top: -9rem;
+}
+
+.cart .col .row .menuCount {
+  position: absolute;
+  margin-inline-start: 20rem;
+  margin-top:-11rem;
+}
+
+.cart .col .row .menuCount button {
+  cursor: pointer;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }

@@ -21,28 +21,57 @@
       </div>
       <h2>Pembayaran</h2>
     </nav>
+    <section class="buy">
+      <div class="col">
+        <div class="row">
+          <div class="trash-icon">
+            <img src="/img/Noncoffee_Chocoladaste.jpeg" alt="" />
+            <h3>Noncoffee_Chocoladaste</h3>
+            <div class="menuCount">
+              <button onclick="decrementItem()">-</button>
+              <span id="itemCount">1</span>
+              <button onclick="incrementItem()">+</button>
+              <button onclick="removeItem()"><i data-feather="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="trash-icon">
+            <img src="/img/Noncoffee_Chocoladaste.jpeg" alt="" />
+            <h3>Noncoffee_Chocoladaste</h3>
+            <div class="menuCount">
+              <button onclick="decrementItem()">-</button>
+              <span id="itemCount">1</span>
+              <button onclick="incrementItem()">+</button>
+              <button onclick="removeItem()"><i data-feather="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-diri">
+        <h3>Isi Form</h3>
+        <form class="formco" action="#action_page">
+          <label for="nama">Nama Pemesan</label>
+          <input type="text" id="namaco" name="namapemesan" placeholder="Nama Pemesan" />
 
-    <div class="form-diri">
-      <h3>Isi Form</h3>
-      <form class="formco" action="#action_page">
-        <label for="nama">Nama Pemesan</label>
-        <input type="text" id="namaco" name="namapemesan" placeholder="Nama Pemesan" />
+          <label for="tempat">Pilih Tempat Makan</label>
+          <select id="tempat" name="tempatmakan">
+            <option value="bawapulang">Bawa Pulang</option>
+            <option value="makanditempat">Makan di Tempat</option>
+          </select>
 
-        <label for="tempat">Pilih Tempat Makan</label>
-        <select id="tempat" name="tempatmakan">
-          <option value="bawapulang">Bawa Pulang</option>
-          <option value="makanditempat">Makan di Tempat</option>
-        </select>
+          <label for="metode">Pilih Metode Pembayaran</label>
+          <select id="bayar" name="carabayar">
+            <option value="tunai">Tunai</option>
+            <option value="qris">QRIS</option>
+          </select>
 
-        <label for="metode">Pilih Metode Pembayaran</label>
-        <select id="bayar" name="carabayar">
-          <option value="tunai">Tunai</option>
-          <option value="qris">QRIS</option>
-        </select>
-
-        <input type="submit" value="Bayar" />
-      </form>
-    </div>
+          <input href type="submit" value="Bayar" />
+        </form>
+      </div>
+    </section>
 
     <!-- Feather Icons -->
     <script>

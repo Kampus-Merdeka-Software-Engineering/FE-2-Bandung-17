@@ -40,6 +40,14 @@
       </form>
       <h2><span>Menu</span> Kami</h2>
       <p>silahkan order dari menu yang kami sediakan ya sobat</p>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="product_makanan.html">Makanan</a>
+          <a href="product_minuman.html">Minuman</a>
+        </div>
+      </div>
       <div class="row">
         <div class="col">
           <div class="product-item" style="width: 18rem">
@@ -49,7 +57,15 @@
               <p>Rp. 30.000</p>
               <div class="list-group">
                 <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-                <a href="#">Detail</a>
+                <button id="myBtn">Detail</button>
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p>Some text in the Modal..</p>
+                    </div>
+                  </div>
                 <a href="#">Bayar</a>
               </div>
             </div>

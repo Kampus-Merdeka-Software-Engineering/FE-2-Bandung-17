@@ -24,6 +24,29 @@
       </div>
     </nav>
 
+    <div class="formco">
+      <form action="#action_page">
+        <h3>Isi Form</h3>
+
+        <label for="nama">Nama Pemesan</label>
+        <input type="text" id="namaco" name="namapemesan" placeholder="Nama Pemesan" />
+
+        <label for="tempat">Pilih Tempat Makan</label>
+        <select id="tempat" name="tempatmakan">
+          <option value="bawapulang">Bawa Pulang</option>
+          <option value="makanditempat">Makan di Tempat</option>
+        </select>
+
+        <label for="metode">Pilih Metode Pembayaran</label>
+        <select id="bayar" name="carabayar">
+          <option value="tunai">Tunai</option>
+          <option value="qris">QRIS</option>
+        </select>
+
+        <input type="submit" value="Bayar" />
+      </form>
+    </div>
+
     <!-- Feather Icons -->
     <script>
       feather.replace();

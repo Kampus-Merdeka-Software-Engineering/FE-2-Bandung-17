@@ -419,11 +419,38 @@ body {
   color: #cfb4ac;
   padding: 7px;
 }
-.menu .row .meet-card {
+
+.group17 {
+  background-color: #cfb4ac;
+}
+
+.group17 .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.group17 h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+}
+
+.group17 .row .meet-card {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-color: #d9d9d9; /* Warna latar belakang kartu */
+  margin: 80px; /* Jarak antar kartu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Warna teks di dalam kartu */
+}
+.group17 .row .meet-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   margin: 80px; /* Jarak antar kartu */
   display: flex;
   align-items: center;
@@ -536,6 +563,70 @@ body {
   padding: 20px;
 }
 
+/* popup modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  height: 40%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  display: grid;
+  grid-template-columns: 32% 60% 18%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: var(--primary2);
+}
+.popup .content {
+  overflow: auto;
+  margin-left: 50px;
+}
+.popup .content h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.popup .content p {
+  text-align: justify;
+  justify-content: center;
+  margin-top: 5px;
+}
+.popup img {
+  width: 200px;
+  height: 200px;
+}
+
+
 /* button search */
 form.example input[type="text"] {
   padding: 8px;
@@ -582,7 +673,6 @@ form.example::after {
 }
 
 .contact .row .sosmed {
-  flex: 1 1 45rem;
   padding: 0rem 2rem;
   text-align: center;
 }
@@ -609,10 +699,8 @@ form.example::after {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type="text"],
-select,
-textarea {
-  width: 100%; /* Full width */
+.row .form-pesan input[type="text"], select, textarea {
+  width: 700px; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid #eee; /* Gray border */
   border-radius: 4px; /* Rounded borders */
@@ -621,8 +709,21 @@ textarea {
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
+
+.row .form-pesan textarea {
+  width: 700px; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #eee; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
 /* Style the submit button with a specific background color etc */
-input[type="submit"] {
+.row .form-pesan input[type="submit"] {
   background-color: #b6895b;
   color: white;
   padding: 12px 20px;
@@ -632,7 +733,7 @@ input[type="submit"] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
+.row .form-pesan input[type="submit"]:hover {
   background-color: #a1764a;
 }
 /* Add a background color and some padding around the form */
@@ -644,55 +745,96 @@ input[type="submit"]:hover {
 
 /* keranjang */
 .cart {
-  padding-top: 4rem;
+  position: relative;
+  padding-top: 2rem;
 }
-.cart .col .row button {
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 20% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  /* justify-content: space-evenly; */
+}
+.cart .cart-content .cart-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  padding: 10px;
+  margin-left: -26rem;
+  margin-right: -6rem;
+}
+.checklist input[type="checkbox"],
+label {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 2rem 0rem 1rem;
+}
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+  margin-left: -32rem;
+}
+.cart .cart-content .cart-box .detail-box h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.cart-price {
+  font-weight: 500;
+}
+.cart-quantity {
+  border: 1px solid var(--primary);
+  outline-color: var(--primary);
+  width: 2.4rem;
+  /* text-align: start; */
+  font-size: 1rem;
+}
+.cart-remove {
+  font-size: 24px;
+  color: var(--primary);
   cursor: pointer;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  margin-left: 5rem;
-  margin-right: 1rem;
+  position: relative;
+  left: 1200px;
+  top: -5rem;
 }
-.cart .col .row img {
-  width: 100px;
-  height: 100px;
-  margin: -3rem 2rem;
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  border-top: 1px solid var(--primary);
 }
-.cart .col .row h3 {
-  position: absolute;
-  margin-inline-start: 20rem;
-  margin-top: -9rem;
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
 }
-
-.cart .col .row .menuCount {
-  position: absolute;
-  margin-inline-start: 20rem;
-  margin-top: -11rem;
+.total-price {
+  margin-left: 0.5rem;
+  margin-right: 4rem;
 }
-
-.cart .col .row .menuCount button {
-  cursor: pointer;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-.cart .checkout {
-  background-color: #fff;
-  padding: 3rem;
+.btn-buy {
+  display: flex;
+  margin: 1.5rem 2rem 0 auto;
+  padding: 12px 20px;
   border: none;
-}
-
-.cart .checkout a {
-  padding: 10px 30px;
-  margin-left: 70rem;
   background-color: var(--primary);
-  border-radius: 1rem;
-  color: #fff;
-  text-decoration: none;
+  color: var(--bg);
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
+  border-radius: 10px;
 }
-/* akhir keranjang */
+.btn-buy:hover {
+  background-color: var(--primary2);
+}
+/* #close-cart {
+  position: absolute;
+  top: 4rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: var(--primary);
+  cursor: pointer;
+} */
+/* akhir keranjang */
 
 /* Dropdown Button */
 .container .dropbtn {
@@ -712,20 +854,20 @@ input[type="submit"]:hover {
 
 /* The search field */
 .container #myInput {
+  width: 95%;
   box-sizing: border-box;
   background-image: url("searchicon.png");
-  background-position: 14px 12px;
+  background-position: 14px 2px;
   background-repeat: no-repeat;
   font-size: 16px;
-  padding: 14px 20px 12px 45px;
+  padding: 14px 20px 12px 12px;
   border: none;
   border-bottom: 1px solid #ddd;
+  margin-left: 5px;
 }
 
 /* The search field when it gets focus/clicked on */
-.container #myInput:focus {
-  outline: 3px solid #ddd;
-}
+.container #myInput:focus {outline: 3px solid #ddd;}
 
 /* The container <div> - needed to position the dropdown content */
 .container .dropdown {
@@ -806,7 +948,7 @@ input[type="submit"]:hover {
   text-align: center;
 }
 .formco {
-  /* margin-left: 10rem; */
+  margin-left: 10rem;
   justify-content: center;
 }
 input[type="text"],
@@ -831,8 +973,12 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   background-color: var(--primary2);
 }
+
+
+

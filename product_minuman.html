@@ -32,8 +32,8 @@
       </div>
     </nav>
     <!-- nav akhir -->
-    <div class="container">
-      <h2 class="judul-item">Minuman</h2>
+    <div class="container" >
+      <h2 class="judul-item"  id="1">Minuman</h2>
       <form class="example" style="margin: auto; max-width: 300px">
         <input type="text" placeholder="Search.." name="search" />
         <button type="submit"><i data-feather="search"></i></button>
@@ -41,28 +41,42 @@
       <h2><span>Menu</span> Kami</h2>
       <p>silahkan order dari menu yang kami sediakan ya sobat</p>
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <button onclick="myFunction()" class="dropbtn">Pilih Menu</button>
         <div id="myDropdown" class="dropdown-content">
           <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" />
           <a href="product_makanan.html">Makanan</a>
           <a href="product_minuman.html">Minuman</a>
         </div>
       </div>
+
       <div class="row">
         <div class="col">
           <div class="product-item" style="width: 18rem">
             <img src="img/menu/Noncoffee_KoreanStrawberryMilk.jpeg" class="card-img-top" alt="KoreanStrawberryMilk" />
-            <div class="nama-product">
-              <h3>Korean Strawberry Milk</h3>
-              <p>Rp. 25.000</p>
+            <div class="nama-product"  id="2">
+              <h3 class="product-title">Korean Strawberry Milk</h3>
+              <p class="price">Rp. 25.000</p>
               <div class="list-group">
-                <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-                <a href="#">Detail</a>
+                <a href="#" class="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+                <a href="#popup1">Detail</a>
                 <a href="#">Bayar</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <img src="img/menu/Noncoffee_KoreanStrawberryMilk.jpeg" class="card-img-top" alt="KoreanStrawberryMilk" />
+              <a class="close" href="#1">&times;</a>
+              <div class="content">
+              <h3>Korean Strawberry Milk</h3>
+              <p>Rp. 25.000</p>
+              <p>Minuman rasa susu korea yang lembut dan manis dengan tambahan strawberry yang segar dan memikat.</p>          
+              </div>
+          </div>
+        </div>
+
         <div class="col">
           <div class="product-item" style="width: 18rem">
             <img src="img/menu/Coffee_Latte.jpeg" class="card-img-top" alt="Coffee_Latte" />
@@ -71,12 +85,25 @@
               <p>Rp. 25.000</p>
               <div class="list-group">
                 <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-                <a href="#">Detail</a>
+                <a href="#popup2">Detail</a>
                 <a href="#">Bayar</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div id="popup2" class="overlay">
+          <div class="popup">
+            <img src="img/menu/Coffee_Latte.jpeg" class="card-img-top" alt="Coffee_Latte" />
+              <a class="close" href="#1">&times;</a>
+              <div class="content">
+              <h3>Coffee Latte</h3>
+              <p>Rp. 25.000</p>
+              <p>Minuman latte yang di mulai dengan espresso berkualitas kemudian dipadukan dengan susu yang di hangatkan secara sempurna.</p>
+              </div>
+          </div>
+        </div>
+
         <div class="col">
           <div class="product-item" style="width: 18rem">
             <img src="img/menu/Noncoffee_SaltedCaramelMilkshake.jpeg" class="card-img-top" alt="SaltedCaramelMilkshake" />
@@ -85,28 +112,54 @@
               <p>Rp. 25.000</p>
               <div class="list-group">
                 <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-                <a href="#">Detail</a>
+                <a href="#popup3">Detail</a>
                 <a href="#">Bayar</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div id="popup3" class="overlay">
+          <div class="popup">
+            <img src="img/menu/Noncoffee_SaltedCaramelMilkshake.jpeg" class="card-img-top" alt="SaltedCaramelMilkshake" />
+              <a class="close" href="#1">&times;</a>
+              <div class="content">
+              <h3>Salted Caramel Milkshake</h3>
+              <p>Rp. 25.000</p>
+              <p>Minuman unik perpaduan dari kelembutan es krim yang lezat dan sentuhan manis caramel yang melimpah.</p> 
+              </div>
+          </div>
+        </div>
+
       </div>
       <div class="row">
         <div class="col">
           <div class="product-item" style="width: 18rem">
             <img src="img/menu/Noncoffee_Matcha.jpeg" class="card-img-top" alt="Noncoffee_Matcha" />
-            <div class="nama-product">
+            <div class="nama-product"  id="3">
               <h3>Matcha</h3>
               <p>Rp. 25.000</p>
               <div class="list-group">
                 <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-                <a href="#">Detail</a>
+                <a href="#popup4">Detail</a>
                 <a href="#">Bayar</a>
               </div>
             </div>
           </div>
         </div>
+        
+        <div id="popup4" class="overlay">
+          <div class="popup">
+            <img src="img/menu/Noncoffee_Matcha.jpeg" class="card-img-top" alt="Noncoffee_Matcha" />
+              <a class="close" href="#2">&times;</a>
+              <div class="content">
+              <h3>Matcha</h3>
+              <p>Rp. 25.000</p>
+              <p>Minuman dengan menggunakan daun teh hijau pilihan serta menawarkan rasa yang intens dan aroma yang khas.</p> 
+              </div>
+          </div>
+        </div>
+
         <div class="col">
           <div class="product-item" style="width: 18rem">
             <img src="img/menu/Noncoffee_Chocolate.jpeg" class="card-img-top" alt="Noncoffee_Chocolate" />
@@ -115,12 +168,25 @@
               <p>Rp. 20.000</p>
               <div class="list-group">
                 <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-                <a href="#">Detail</a>
+                <a href="#popup5">Detail</a>
                 <a href="#">Bayar</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div id="popup5" class="overlay">
+          <div class="popup">
+            <img src="img/menu/Noncoffee_Chocolate.jpeg" class="card-img-top" alt="Noncoffee_Chocolate" />
+              <a class="close" href="#2">&times;</a>
+              <div class="content">
+              <h3>Chocolate</h3>
+              <p>Rp. 20.000</p>
+              <p>Minuman coklat premium yang diracik dengan cermat menggunakan coklat pilihan.</p> 
+              </div>
+          </div>
+        </div>
+
         <div class="col">
           <div class="product-item" style="width: 18rem">
             <img src="img/menu/Noncoffee_Tea.jpeg" class="card-img-top" alt="Noncoffee_Tea" />
@@ -129,12 +195,25 @@
               <p>Rp. 9.000</p>
               <div class="list-group">
                 <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-                <a href="#">Detail</a>
+                <a href="#popup6">Detail</a>
                 <a href="#">Bayar</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div id="popup6" class="overlay">
+          <div class="popup">
+            <img src="img/menu/Noncoffee_Tea.jpeg" class="card-img-top" alt="Noncoffee_Tea" />
+              <a class="close" href="#2">&times;</a>
+              <div class="content">
+              <h3>Tea</h3>
+              <p>Rp. 9.000</p>
+              <p>Minuman dengan teh yang khas dan pekat.</p> 
+              </div>
+          </div>
+        </div>
+
       </div>
       <div class="row">
         <div class="col">
@@ -145,12 +224,25 @@
               <p>Rp. 20.000</p>
               <div class="list-group">
                 <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-                <a href="#">Detail</a>
+                <a href="#popup7">Detail</a>
                 <a href="#">Bayar</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div id="popup7" class="overlay">
+          <div class="popup">
+            <img src="img/menu/Coffee_Americano.jpeg" class="card-img-top" alt="Coffee_Americano" />
+              <a class="close" href="#3">&times;</a>
+              <div class="content">
+              <h3>Americano</h3>
+              <p>Rp. 20.000</p>
+              <p>Minuman kopi klasik dengan cita rasa yang kaya dan pekat, namun lebih ringan.</p> 
+              </div>
+          </div>
+        </div>
+
         <div class="col">
           <div class="product-item" style="width: 18rem">
             <img src="img/menu/Coffee_Espresso.jpeg" class="card-img-top" alt="Coffee_Espresso" />
@@ -159,26 +251,52 @@
               <p>Rp. 20.000</p>
               <div class="list-group">
                 <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-                <a href="#">Detail</a>
+                <a href="#popup8">Detail</a>
                 <a href="#">Bayar</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div id="popup8" class="overlay">
+          <div class="popup">
+            <img src="img/menu/Coffee_Espresso.jpeg" class="card-img-top" alt="Coffee_Espresso" />
+              <a class="close" href="#3">&times;</a>
+              <div class="content">
+              <h3>Espresso</h3>
+              <p>Rp. 20.000</p>
+              <p>Secangkir kopi susu kaya rasa dengan aroma kuat cocok bagi pecinta kopi.</p> 
+              </div>
+          </div>
+        </div>
+
         <div class="col">
           <div class="product-item" style="width: 18rem">
-            <img src="img/menu/Coffee_Cappuccino.jpeg" class="card-img-top" alt="Coffee_Cappuccino" />
+            <img class="product-img" src="img/menu/Coffee_Cappuccino.jpeg" class="card-img-top" alt="Coffee_Cappuccino" />
             <div class="nama-product">
               <h3>Cappuccino</h3>
               <p>Rp. 25.000</p>
               <div class="list-group">
                 <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-                <a href="#">Detail</a>
+                <a href="#popup9">Detail</a>
                 <a href="#">Bayar</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div id="popup9" class="overlay">
+          <div class="popup">
+            <img class="product-img" src="img/menu/Coffee_Cappuccino.jpeg" class="card-img-top" alt="Coffee_Cappuccino" />
+              <a class="close" href="#3">&times;</a>
+              <div class="content">
+              <h3>Cappuccino</h3>
+              <p>Rp. 25.000</p>
+              <p>Minuman yang dibuat dengan espresso berkualitas tinggi, susu yang dihangatkan dengan sempurna dan taburan coklat halus.  </p> 
+              </div>
+          </div>
+        </div>
+
       </div>
     </div>
     <!-- Feather Icons -->

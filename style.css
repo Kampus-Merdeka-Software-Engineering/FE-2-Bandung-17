@@ -938,7 +938,7 @@ label {
 /* Pembayaran */
 .navbar-form {
   display: grid;
-  grid-template-columns: 40% 30%;
+  grid-template-columns: 35% 30%;
   background-color: #c8a287;
   /* padding: 20px 0; */
   color: rgb(252, 248, 243);
@@ -949,9 +949,18 @@ label {
   z-index: 1000;
   padding: 0.5rem;
 }
+.navbar-form h2 {
+  text-align: center;
+}
 .buy {
   position: relative;
   padding-top: 6rem;
+}
+.buy h2 {
+  text-align: center;
+}
+.buy h2 span {
+  color: var(--primary2);
 }
 
 .buy-box {

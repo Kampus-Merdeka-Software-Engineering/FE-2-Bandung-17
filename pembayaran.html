@@ -15,35 +15,25 @@
   </head>
 
   <body>
+    <nav class="navbar-form">
+      <div class="previous">
+        <a href="keranjang.html" id="chevron-left"><i data-feather="chevron-left"></i></a>
+      </div>
+      <h2>Pembayaran</h2>
+    </nav>
+
     <section class="buy">
-      <div class="col">
-        <div class="row">
-          <div class="trash-icon">
-            <img src="/img/Noncoffee_Chocoladaste.jpeg" alt="" />
-            <h3>Noncoffee_Chocoladaste</h3>
-            <div class="menuCount">
-              <button onclick="decrementItem()">-</button>
-              <span id="itemCount">1</span>
-              <button onclick="incrementItem()">+</button>
-              <button onclick="removeItem()"><i data-feather="trash-2"></i></button>
-            </div>
+      <h2>Rincian Pembelian</h2>
+      <div class="buy-content">
+        <div class="buy-box">
+          <img src="/img/Noncoffee_Chocoladaste.jpeg" alt=""  />
+          <div class="dtlbuy-box">
+            <h3>Noncoffee Chocoladaste</h3>
+            <p>Jumlah: 1</p>
+            <div class="buy-price"> Rp.25.000</div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="row">
-          <div class="trash-icon">
-            <img src="/img/Noncoffee_Chocoladaste.jpeg" alt="" />
-            <h3>Noncoffee_Chocoladaste</h3>
-            <div class="menuCount">
-              <button onclick="decrementItem()">-</button>
-              <span id="itemCount">1</span>
-              <button onclick="incrementItem()">+</button>
-              <button onclick="removeItem()"><i data-feather="trash-2"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="form-diri">
         <h3>Isi Form</h3>
         <form class="formco" action="#action_page">
@@ -62,30 +52,30 @@
             <option value="qris">QRIS</option>
           </select>
 
-          <input type="submit" value="Ok">
+          <input type="submit" value="Ok" />
           <button><a href="#BayarKasir">Bayar Tunai</a></button>
           <button><a href="#BayarQris">Bayar QRIS</a></button>
         </form>
-      </div>    
+      </div>
     </section>
 
     <div id="BayarKasir" class="overlay-bayar">
       <div class="popup-bayar">
         <img src="img/approve.png" alt="centang" />
-          <a class="close" href="home.html">&times;</a>
-          <div class="content">
-          <p>Pesanan Sedang diproses silahkan melakukan pembayaran ke kasir</p>              
-          </div>
+        <a class="close" href="home.html">&times;</a>
+        <div class="content">
+          <p>Pesanan Sedang diproses silahkan melakukan pembayaran ke kasir</p>
+        </div>
       </div>
     </div>
 
     <div id="BayarQris" class="overlay-bayar">
       <div class="popup-bayar">
         <img class="qris" src="img/QRIS_SE_RevoU_qrcode.png" alt="qris" />
-          <a class="close" href="home.html">&times;</a>
-          <div class="content">
-          <p>Pesanan Sedang diproses silahkan scan QRIS di atas</p>              
-          </div>
+        <a class="close" href="home.html">&times;</a>
+        <div class="content">
+          <p>Pesanan Sedang diproses silahkan scan QRIS di atas</p>
+        </div>
       </div>
     </div>
 
@@ -95,6 +85,6 @@
     </script>
 
     <!-- My JavaScript -->
-    <script src="script.js"></script>
+    <script src="keranjang.js"></script>
   </body>
 </html>

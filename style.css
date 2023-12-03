@@ -173,16 +173,21 @@ body {
 }
 
 /* Caption text */
-.text {
+.slideshow-container .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: bold;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 50%;
   width: 100%;
   text-align: center;
+  text-shadow: 1px 1px #333;
 }
 
+.slideshow-container .text span {
+  font-size: 32px;
+}
 /* Number text (1/3 etc) */
 /* .numbertext {
   color: #f2f2f2;
@@ -581,7 +586,7 @@ body {
 }
 
 .popup {
-  margin: 70px auto;
+  margin: 170px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -980,5 +985,72 @@ input[type="submit"]:hover {
   background-color: var(--primary2);
 }
 
+/* popup modal pembayaran*/
+.overlay-bayar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay-bayar:target {
+  visibility: visible;
+  opacity: 1;
+}
 
+.popup-bayar {
+  margin: 150px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  height: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
 
+.popup-bayar .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup-bayar .close:hover {
+  color: var(--primary2);
+}
+.popup-bayar .content {
+  overflow: auto;
+}
+
+.popup-bayar .content p {
+  text-align: center;
+  margin-top: 70px;
+}
+.popup-bayar img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 12px solid #30D143;
+
+}
+.popup-bayar .qris{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 200px;
+  height: 200px;
+}

@@ -15,12 +15,6 @@
   </head>
 
   <body>
-    <nav class="navbar-form">
-      <div class="previous">
-        <a href="keranjang.html" id="chevron-left"><i data-feather="chevron-left"></i></a>
-      </div>
-      <h2>Pembayaran</h2>
-    </nav>
     <section class="buy">
       <div class="col">
         <div class="row">
@@ -68,10 +62,32 @@
             <option value="qris">QRIS</option>
           </select>
 
-          <input type="submit" value="Bayar" />
+          <input type="submit" value="Ok">
+          <button><a href="#BayarKasir">Bayar Tunai</a></button>
+          <button><a href="#BayarQris">Bayar QRIS</a></button>
         </form>
-      </div>
+      </div>    
     </section>
+
+    <div id="BayarKasir" class="overlay-bayar">
+      <div class="popup-bayar">
+        <img src="img/approve.png" alt="centang" />
+          <a class="close" href="home.html">&times;</a>
+          <div class="content">
+          <p>Pesanan Sedang diproses silahkan melakukan pembayaran ke kasir</p>              
+          </div>
+      </div>
+    </div>
+
+    <div id="BayarQris" class="overlay-bayar">
+      <div class="popup-bayar">
+        <img class="qris" src="img/QRIS_SE_RevoU_qrcode.png" alt="qris" />
+          <a class="close" href="home.html">&times;</a>
+          <div class="content">
+          <p>Pesanan Sedang diproses silahkan scan QRIS di atas</p>              
+          </div>
+      </div>
+    </div>
 
     <!-- Feather Icons -->
     <script>

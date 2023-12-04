@@ -523,10 +523,15 @@ body {
 
 .container .product-item {
   text-align: center;
+  gap: 1rem;
 }
 
 .container .product-item img {
   height: 15rem;
+  gap: 1rem;
+}
+.container .row .col .product-item .nama-product .list-grup .shopping-cart-button {
+  font-size: 100px;
 }
 .container .judul-item {
   margin-top: 2rem;

@@ -38,3 +38,20 @@ function removeCartItem(event, cart) {
   var buttonClicked = event.target;
   cart.remove();
 }
+
+// adding data to localstorage
+const attTocartBtn = document.getElementsByClassName("attToCart");
+let items = [];
+for (let i = 0; i < attTocartBtn.length; i++) {
+  attTocartBtn[i].addEventListener("click", function (e) {
+    console.log(e.target.parentElement.children[0]);
+    if (typeof Storage !== "undefined") {
+      let item = {
+        id: i + 1,
+        name: e.target.parentElement.children[0],
+      };
+    } else {
+      alert("local storage is not working on your browser");
+    }
+  });
+}

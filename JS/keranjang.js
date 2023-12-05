@@ -74,7 +74,7 @@ function addToLocalStorage(productName, productPrice, productImage) {
 
   cartItems.push(product);
   localStorage.setItem("cart", JSON.stringify(cartItems));
-  alert("Item added to cart!");
+  alert("Produk telah ditambahkan");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -148,7 +148,7 @@ function fetchProduct() {
     var totalPriceElement = document.getElementById("totalPrice");
     totalPriceElement.textContent = "Rp." + totalPrice;
   } else {
-    cartContent.innerHTML = "<p>Your cart is empty</p>";
+    cartContent.innerHTML = "<p>Keranjang Anda Masih Kosong</p>";
   }
 
   feather.replace();

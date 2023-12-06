@@ -523,6 +523,7 @@ body {
   border-radius: 0.5rem;
   color: #fff;
   text-decoration: none;
+  padding: 6px 5px;
 }
 .container a:hover {
   background-color: #d9d9d9;
@@ -826,7 +827,8 @@ label {
 
 /* Dropdown Button */
 .container {
-  position: relative;
+  position: grid;
+  gap: 1rem;
 }
 .container .dropbtn {
   background-color: var(--primary);
@@ -837,7 +839,7 @@ label {
   cursor: pointer;
   position: absolute;
   top: 0px;
-  left: 885px;
+  left: 892px;
   width: 130px;
 }
 

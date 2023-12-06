@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kafe Kita</title>
     <!-- my css -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- Fonts -->
@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
   </head>
+
   <body>
     <nav class="navbar">
       <div class="logo">
@@ -21,7 +22,7 @@
         </h4>
       </div>
       <div class="navbar-nav">
-        <a href="home.html">Beranda</a>
+        <a href="index.html">Beranda</a>
         <a href="menu.html">Menu</a>
         <a href="tentang_kami.html">Tentang Kami</a>
       </div>
@@ -31,29 +32,15 @@
       </div>
     </nav>
     <section id="cart" class="cart">
-      <div class="cart-content">
-        <div class="cart-box">
-          <div class="checklist">
-            <input type="checkbox" value="" id="flexCheckDefault" />
-            <label for="flexCheckDefault"></label>
-          </div>
-          <img src="/img/Noncoffee_Chocoladaste.jpeg" alt="" class="cart-img" />
-          <div class="detail-box">
-            <h3>Noncoffee_Chocoladaste</h3>
-            <div class="cart-price">Rp.25.000</div>
-            <input type="number" value="1" class="cart-quantity" />
-          </div>
-          <!-- remove cart -->
-          <i class="cart-remove" id="cart-remove" data-feather="trash-2"></i>
-        </div>
-      </div>
+      <h2><span>Keranjang</span> Anda</h2>
+      <div class="cart-content"></div>
       <!-- total -->
       <div class="total">
         <h4 class="total-title">Total</h4>
-        <h4 class="total-price">Rp.0</h4>
+        <h4 class="total-price" id="totalPrice">Rp.0</h4>
       </div>
       <!-- button bayar -->
-      <button type="button" class="btn-buy">Beli Sekarang</button>
+      <a href="pembayaran.html"><button href="pembayaran.html" type="button" class="btn-buy">Beli Sekarang</button></a>
       <!-- cart close -->
     </section>
 
@@ -63,6 +50,6 @@
     </script>
 
     <!-- My JavaScript -->
-    <script src="/script.js"></script>
-  </body>
+    <script src="JS/keranjang.js"></script>
+  </body>
 </html>

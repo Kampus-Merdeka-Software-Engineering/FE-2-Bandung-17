@@ -496,10 +496,15 @@ body {
 
 .container .product-item {
   text-align: center;
+  gap: 1rem;
 }
 
 .container .product-item img {
   height: 15rem;
+  gap: 1rem;
+}
+.container .row .col .product-item .nama-product .list-grup .shopping-cart-button {
+  font-size: 100px;
 }
 .container .judul-item {
   margin-top: 2rem;
@@ -559,7 +564,7 @@ body {
 }
 
 .popup {
-  margin: 170px auto;
+  margin: 70px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -603,7 +608,6 @@ body {
   width: 200px;
   height: 200px;
 }
-
 
 /* button search */
 form.example input[type="text"] {
@@ -677,7 +681,9 @@ form.example::after {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-.row .form-pesan input[type="text"], select, textarea {
+.row .form-pesan input[type="text"],
+select,
+textarea {
   width: 700px; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid #eee; /* Gray border */
@@ -698,7 +704,6 @@ form.example::after {
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-
 
 /* Style the submit button with a specific background color etc */
 .row .form-pesan input[type="submit"] {
@@ -724,34 +729,37 @@ form.example::after {
 /* keranjang */
 .cart {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 6rem;
+}
+.cart h2 {
+  text-align: center;
+}
+.cart h2 span {
+  color: var(--primary2);
 }
 .cart-box {
   display: grid;
-  grid-template-columns: 32% 20% 18%;
+  grid-template-columns: 10% 15% 20% 30%;
   align-items: center;
   gap: 1rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   /* justify-content: space-evenly; */
 }
 .cart .cart-content .cart-box img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 180px;
   object-fit: contain;
   padding: 10px;
-  margin-left: -26rem;
-  margin-right: -6rem;
+  margin-left: -3rem;
 }
 .checklist input[type="checkbox"],
 label {
   display: flex;
   gap: 1rem;
-  margin: 2rem 2rem 0rem 1rem;
 }
 .detail-box {
   display: grid;
   row-gap: 0.5rem;
-  margin-left: -32rem;
 }
 .cart .cart-content .cart-box .detail-box h3 {
   font-size: 1rem;
@@ -771,9 +779,8 @@ label {
   font-size: 24px;
   color: var(--primary);
   cursor: pointer;
-  position: relative;
-  left: 1200px;
-  top: -5rem;
+  position: absolute;
+  right: 2rem;
 }
 .total {
   display: flex;
@@ -800,6 +807,9 @@ label {
   font-weight: 500;
   cursor: pointer;
   border-radius: 10px;
+}
+.cart a {
+  text-decoration: none;
 }
 .btn-buy:hover {
   background-color: var(--primary2);
@@ -852,7 +862,9 @@ label {
 }
 
 /* The search field when it gets focus/clicked on */
-.container #myInput:focus {outline: 3px solid #ddd;}
+.container #myInput:focus {
+  outline: 3px solid #ddd;
+}
 
 /* The container <div> - needed to position the dropdown content */
 .container .dropdown {
@@ -910,9 +922,9 @@ label {
 
 /* Pembayaran */
 .navbar-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 35% 30%;
   background-color: #c8a287;
-  justify-content: center;
   /* padding: 20px 0; */
   color: rgb(252, 248, 243);
   height: 50px;
@@ -920,27 +932,55 @@ label {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  padding: 1.4rem 4%;
+  padding: 0.5rem;
 }
-.navbar-form a {
-  margin-inline-start: auto;
+.navbar-form h2 {
+  text-align: center;
 }
-/* Style inputs with type="text", select elements and textareas */
-
-.form-diri h3 {
+.buy {
+  position: relative;
   padding-top: 6rem;
+}
+.buy h2 {
+  text-align: center;
+}
+.buy h2 span {
+  color: var(--primary2);
+}
+
+.buy-box {
+  display: grid;
+  grid-template-columns: 18% 25%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.buy .buy-content .buy-box img {
+  width: 200px;
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* form-diri */
+.form-diri {
+  padding-top: 6rem;
+}
+.form-diri h3 {
   padding-bottom: 1rem;
   text-align: center;
 }
 .formco {
-  margin-left: 10rem;
+  margin-left: 27rem;
   justify-content: center;
 }
+/* Style inputs with type="text", select elements and textareas */
 input[type="text"],
 select,
 textarea {
   display: block;
-  width: 50%; /* Full width */
+  width: 60%; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
@@ -959,12 +999,16 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 10px;
+  text-align: center;
 }
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   background-color: var(--primary2);
 }
-
+.submit-pembayaran {
+  margin-left: 35rem;
+}
+/* akhir pembayaran */
 /* popup modal pembayaran*/
 .overlay-bayar {
   position: fixed;
@@ -1014,7 +1058,7 @@ input[type="submit"]:hover {
   text-align: center;
   margin-top: 70px;
 }
-.popup-bayar img{
+.popup-bayar img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1023,10 +1067,9 @@ input[type="submit"]:hover {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 12px solid #30D143;
-
+  border: 12px solid #30d143;
 }
-.popup-bayar .qris{
+.popup-bayar .qris {
   display: block;
   margin-left: auto;
   margin-right: auto;

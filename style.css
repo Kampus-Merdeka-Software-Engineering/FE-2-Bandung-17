@@ -291,20 +291,10 @@ body {
   color: #cfb4ac;
 }
 
-.menu .row .menu-card .menu-card-price {
+.menu .row .menu-card .menu-card-desc {
   color: #cfb4ac;
   padding: 7px;
-}
-.menu .row .meet-card {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #d9d9d9; /* Warna latar belakang kartu */
-  margin: 80px; /* Jarak antar kartu */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff; /* Warna teks di dalam kartu */
+  height: 70px;
 }
 
 /* About Section */
@@ -397,13 +387,6 @@ body {
   color: #222;
 }
 
-.menu .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
-  justify-content: space-around;
-}
-
 .menu .row .menu-card {
   text-align: center;
   padding-bottom: 4rem;
@@ -413,16 +396,6 @@ body {
 
 .menu .row .menu-card img {
   width: 100%;
-}
-
-.menu .row .menu-card .menu-pilihan {
-  margin: 1rem auto 0.5rem;
-  color: #cfb4ac;
-}
-
-.menu .row .menu-card .menu-card-price {
-  color: #cfb4ac;
-  padding: 7px;
 }
 
 .group17 {
@@ -842,6 +815,9 @@ label {
 /* akhir keranjang */
 
 /* Dropdown Button */
+.container {
+  position: relative;
+}
 .container .dropbtn {
   background-color: var(--primary);
   color: white;
@@ -849,6 +825,10 @@ label {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 885px;
+  width: 130px;
 }
 
 /* Dropdown button on hover & focus */

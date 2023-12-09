@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tentang Kami</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- Fonts -->
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
     <!-- My Style -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
   </head>
 
   <body>
@@ -96,15 +96,15 @@
           </div>
         </div>
 
-        <form action="action_page" class="form-pesan">
-          <label for="nama">Nama</label>
-          <input type="text" id="fname" name="firstname" placeholder="Nama kamu.." />
+        <form id="formPesan">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama kamu.." autocomplete="off" />
 
-          <label for="alamat">Alamat</label>
-          <input type="text" id="lname" name="lastname" placeholder="Misalnya Bandung.." />
+          <label for="address">Alamat</label>
+          <input type="text" id="address" name="address" placeholder="Misalnya Bandung.." autocomplete="off" />
 
-          <label for="subject">Pesan</label>
-          <textarea id="subject" name="subject" placeholder="Tulis pesan.." style="height: 200px"></textarea>
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" placeholder="Tulis pesan.." style="height: 200px"></textarea>
 
           <input type="submit" value="Submit" />
         </form>
@@ -117,6 +117,6 @@
     </script>
 
     <!-- My JavaScript -->
-    <script src="JS/script.js"></script>
+    <script src="JS/tentang_kami.js"></script>
   </body>
 </html>

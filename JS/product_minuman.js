@@ -59,7 +59,7 @@ const displayProducts = (product) => {
 
          <div id="popup${product.id}" class="overlay">
            <div class="popup">
-             <img src=${product.imgUrl} class="card-img-top" alt="${product.name}" referrerpolicy="no-referrer"/>
+             <img src=${product.imageUrl} class="card-img-top" alt="${product.name}" referrerpolicy="no-referrer"/>
              <a class="close" href="#">&times;</a>
              <div class="content">
                <h3>${product.name}</h3>

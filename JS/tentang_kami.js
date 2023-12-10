@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
  
     // Kirim data ke backend
-    fetch("https://be-2-bandung-17-production.up.railway.app/message", {
+    fetch("https://be-2-bandung-17-production.up.railway.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

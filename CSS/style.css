@@ -503,8 +503,8 @@ body {
   height: 15rem;
   gap: 1rem;
 }
-.container .row .col .product-item .nama-product .list-grup .shopping-cart-button {
-  font-size: 100px;
+.container .row .col .product-item .nama-product .list-grup .addToCart {
+  size: 2px;
 }
 .container .judul-item {
   margin-top: 2rem;
@@ -621,12 +621,14 @@ form.example input[type="text"] {
   float: left;
   width: 80%;
   background: #f1f1f1;
+  border-radius: 7% 0 0 7%;
 }
 
 form.example button {
   width: 20%;
+  height: 10%;
   border-radius: 7%;
-  padding: 10px;
+  padding: 4px 4.5px;
   background: #2196f3;
   color: white;
   font-size: 17px;
@@ -638,6 +640,9 @@ form.example button {
 
 form.example button:hover {
   background: #92ccfc;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
 }
 
 form.example::after {
@@ -984,8 +989,7 @@ label {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-.contact .row
-input[type="text"],
+.contact .row input[type="text"],
 textarea {
   display: block;
   width: 230%; /* Full width */

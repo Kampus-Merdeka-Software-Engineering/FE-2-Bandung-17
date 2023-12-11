@@ -49,7 +49,7 @@ const displayProducts = (product) => {
                <h3>${product.name}</h3>
                <p>${product.price}</p>
                <div class="list-group">
-                 <a href="#" id="shopping-cart-button" class="addToCart"><i data-feather="shopping-cart"></i></a>
+                 <a href="#" id="shopping-cart-button" class="addToCart">+</i></a>
                  <a href="#popup${product.id}">Detail</a>
                  <a href="#">Bayar</a>
                </div>
